@@ -21,6 +21,8 @@ public class Main {
         
         System.out.println("Ep hello!");
         
+        System.out.println("Utilitzant lo git");
+        
     }
     
 }
