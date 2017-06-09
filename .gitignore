@@ -27,3 +27,8 @@ hs_err_pid*
 /prova_jdbc/target/
 /proyecto_maven/target/
 /junit_prove/nbproject/
+/webService/target/
+/EjemploUnoCliente/target/
+/WebMaven1/target/
+/servicePersona/target/
+/serviceClientPersona/target/
