@@ -24,7 +24,9 @@ public class Persona implements Serializable {
     private Long id;
     private String nombre;
         
-        
+    
+    public Persona(){}
+    
     public Persona(String nombre){
     
         this.nombre = nombre;

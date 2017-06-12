@@ -32,3 +32,6 @@ hs_err_pid*
 /WebMaven1/target/
 /servicePersona/target/
 /serviceClientPersona/target/
+/ServicioPersistencia/target/
+/EjemploRestUno/target/
+/EjemploRestUnoClient/target/

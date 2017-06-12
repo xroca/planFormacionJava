@@ -32,7 +32,7 @@ public class PersistenciaWs {
     public String hello(@WebParam(name = "name") String txt) {
         return "Hello " + txt + " !";
     }
-
+    
     public Persona crear(String nombre) {
 
         Persona p = new Persona(nombre);
@@ -41,7 +41,7 @@ public class PersistenciaWs {
 
         return p;
     }
-
+    @WebMethod(operationName = "todos")
     public List<Persona> todos() {
 
         return em.createQuery("select p from Persona p").getResultList();
