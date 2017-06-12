@@ -23,16 +23,16 @@ public class NewJerseyClient {
 
     private javax.ws.rs.client.WebTarget webTarget;
     private javax.ws.rs.client.Client client;
-    private static final String BASE_URI = "http://localhost:8080/EjemploRestUno/webresources";
+    private static final String BASE_URI = "http://localhost:8080/EjemploRestUno/api";
 
     public NewJerseyClient() {
         client = javax.ws.rs.client.ClientBuilder.newClient();
         webTarget = client.target(BASE_URI).path("ruta");
     }
 
-    public String getXml() throws javax.ws.rs.ClientErrorException {
+    public <T> T getXml(Class<T> responseType) throws javax.ws.rs.ClientErrorException {
         WebTarget resource = webTarget;
-        return resource.request(javax.ws.rs.core.MediaType.APPLICATION_XML).get(String.class);
+        return resource.request(javax.ws.rs.core.MediaType.APPLICATION_XML).get(responseType);
     }
 
     public void putXml(Object requestEntity) throws javax.ws.rs.ClientErrorException {

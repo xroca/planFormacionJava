@@ -5,6 +5,7 @@
  */
 package com.mycompany.ejemplorestuno;
 
+import com.mycompany.ejemplorestuno.modelo.Persona;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
@@ -37,17 +38,23 @@ public class RutaResource {
      */
     @GET
     @Produces(MediaType.APPLICATION_XML)
-    public String getXml() {
+    public Persona getXml() {
         //TODO return proper representation object
-        throw new UnsupportedOperationException();
+        return new Persona(1000L,"Xavier");
     }
 
     /**
      * PUT method for updating or creating an instance of RutaResource
      * @param content representation for the resource
+     * @return 
      */
+   
     @PUT
     @Consumes(MediaType.APPLICATION_XML)
-    public void putXml(String content) {
+    public Persona putXml(Persona content) {
+        
+        System.out.println("Persona: "+content.toString());
+        
+        return content;
     }
 }
