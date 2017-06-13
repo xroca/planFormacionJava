@@ -31,15 +31,7 @@ public class Principal {
         System.out.println(p);
         
         
-        
-        
-        
-        
-        
-     
-        
-        
-        
+
         
     }
     
