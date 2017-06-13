@@ -1,0 +1,6 @@
+Dado un proyecto maven, por ejemplo "test", con estas coordenadas:
+    <groupId>com.curso</groupId>
+    <artifactId>test</artifactId>
+para eliminar el artefacto (test-1.0-SNAPSHOT.jar):
+
+mvn dependency:purge-local-repository -DmanualInclude="com.curso:test"

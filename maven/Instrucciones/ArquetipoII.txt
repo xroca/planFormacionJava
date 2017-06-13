@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=com.arquetipo -DartifactId=automatico -DarchetypeArtifactId=maven-archetype-archetype

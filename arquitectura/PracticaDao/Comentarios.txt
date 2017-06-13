@@ -1,0 +1,11 @@
+EjemploDaoVersion1: posible solución a cómo implementar
+		    un Dao en memoria
+EjemploDaoVersion2: ejemplo de los cambios necesarios si elegimos 
+		    almacenar la información en un archivo
+
+NOTA: todas las clases e interfaces están en el mismo paquete
+      para facilitar su inspección
+
+EjemploDaoVersion3: creación de una capa de servicios
+
+EjemploDaoVersion4: creación de un dao jbc

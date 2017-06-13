@@ -1,0 +1,8 @@
+usuario: admin
+clave: admin1
+correo: khepherer@gmail.com
+
+Deployment
+user1
+user1
+khepherer@gmail.com

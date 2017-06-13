@@ -1,0 +1,1 @@
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DgroupId=com.curso.app -DartifactId=appweb

@@ -1,0 +1,3 @@
+git config --global user.name "Nombre"
+git config --global user.email "abc@xyz.com"
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080

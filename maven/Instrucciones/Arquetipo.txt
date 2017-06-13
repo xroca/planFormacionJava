@@ -1,0 +1,1 @@
+mvn archetype:generate -DarchetypeGroupId=com.curso -DarchetypeArtifactId=arquetipo -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.prueba -DartifactId=prueba -DinteractiveMode=false

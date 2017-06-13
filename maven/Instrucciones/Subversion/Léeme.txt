@@ -1,0 +1,3 @@
+Abrir una ventana de comandos
+Ejecutar echo %APPDATA%
+Ejecutar explorer %APPDATA%\Subversion

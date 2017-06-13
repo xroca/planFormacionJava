@@ -1,0 +1,1 @@
+java -cp target/primero-1.0-SNAPSHOT.jar com.curso.app.App

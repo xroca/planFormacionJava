@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo WebSocket</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <script src="sockjs-0.3.4.js"></script>
+        <script src="stomp.js"></script>
+        <script type="text/javascript">
+            var clienteStomp = null;
+
+            function setConnected(conectado) {
+                document.getElementById('conectar').disabled = conectado;
+                document.getElementById('desconectar').disabled = !conectado;
+                document.getElementById('conversacionDiv').style.visibility = conectado ? 'visible' : 'hidden';
+                document.getElementById('respuesta').innerHTML = '';
+            }
+
+            function conectar() {
+                var socket = new SockJS('/mensaje');
+                clienteStomp = Stomp.over(socket);
+                clienteStomp.connect({}, function (frame) {
+                    setConnected(true);
+                    console.log('Conectado: ' + frame);
+                    clienteStomp.subscribe('/topic/saludos', function (saludo) {
+                        mostrarRespuesta(JSON.parse(saludo.body).contenido);
+                    });
+                });
+            }
+
+            function desconectar() {
+                clienteStomp.disconnect();
+                setConnected(false);
+                console.log("Desconectado");
+            }
+
+            function enviarNombre() {
+                var name = document.getElementById('name').value;
+                clienteStomp.send("/app/mensaje", {}, JSON.stringify({'nombre': name}));
+            }
+
+            function mostrarRespuesta(mensaje) {
+                var respuesta = document.getElementById('respuesta');
+                var p = document.createElement('p');
+                p.style.wordWrap = 'break-word';
+                p.appendChild(document.createTextNode(mensaje));
+                respuesta.appendChild(p);
+            }
+        </script>
+    </head>
+    <body>
+        <noscript><h2 style="color: #ff0000">Activa JavaScript para que los WebSockets puedan funcionar</h2></noscript>
+        <h1>Activar consola JavaScript</h1>
+        <div>
+            <div>
+                <button id="conectar" onclick="conectar();">Conectar</button>
+                <button id="desconectar" disabled="disabled" onclick="desconectar();">Desconectar</button>
+            </div>
+            <div id="conversacionDiv">
+                <label>Tu nombre es</label><input type="text" id="name" />
+                <button id="sendName" onclick="enviarNombre();">Enviar</button>
+                <p id="respuesta"></p>
+            </div>
+        </div>
+    </body>
+</html>

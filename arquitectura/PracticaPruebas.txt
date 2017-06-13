@@ -1,0 +1,15 @@
+public class Aritmetica
+  public Double
+     media(List<Double> numeros)
+
+Casos de prueba
+---------------
+Lista nula -->
+ IllegalArgumentException
+Lista vacía -->
+ IllegalArgumentException
+Lista con al menos
+un valor negativo -->
+ RuntimeException
+Lista con valores correctos -->
+ media de (2.0,2.0,2.0) == 2.0

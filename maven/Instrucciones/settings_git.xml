@@ -1,0 +1,19 @@
+<settings>
+  <servers>
+    <server>
+      <id>archiva.internal</id>
+      <username>user1</username>
+      <password>user1</password>
+    </server>
+    <server>
+      <id>archiva.snapshots</id>
+      <username>user1</username>
+      <password>user1</password>
+    </server>
+        <server>
+            <id>github.com</id>
+            <username>usuario</username>
+            <password>clave</password>
+        </server>
+  </servers>
+</settings>

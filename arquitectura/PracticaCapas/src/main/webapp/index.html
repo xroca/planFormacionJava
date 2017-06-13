@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+              crossorigin="anonymous">
+        <style type="text/css">
+            body{
+                margin: auto;
+                text-align: center
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Buscar Vehículos de determinada marca y precio</h2>
+        <form action="ControladorServlet">
+            <div class="form-group">
+                <label for="marca">Marca</label>
+                <input type="text" id="marca" name="marca" autofocus required placeholder="Marca"/>            
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio" min="1000" max="10000" step="1000" required placeholder="Precio"/>
+                <input type="submit" value="Enviar" class="btn btn-primary"/>
+            </div>            
+        </form>
+    </body>
+</html>

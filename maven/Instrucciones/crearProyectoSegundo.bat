@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=com.curso.app -DartifactId=segundo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

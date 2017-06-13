@@ -1,0 +1,8 @@
+Ir al directorio APPDATA --> echo %APPDATA% --> cd %APPDATA%\Subversion --> D:\Usuarios\rfernandezg\AppData\Roaming\Subversion
+Editar el archivo servers
+
+Credenciales:
+username: iconojdiazch
+password: 99$gEngIs$51
+Para probarlo:
+svn checkout --username ARGV --password ARGV https://subversion.assembla.com/svn/cursorepo/trunk/primero

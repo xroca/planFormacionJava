@@ -1,0 +1,15 @@
+Escribir un programa que:
+1.- muestre una página de bienvenida con un enlace
+2.- el enlace nos lleva a otra página con un formulario
+3.- el formulario tiene un único campo de texto monolínea
+    3.1.- El campo no puede estar vacío
+    3.2.- El texto debe tener al menos 5 caracteres
+4.- cuando enviemos el formulario, el contenido de ese campo aparece en otra página
+
+Pasos
+1.- Crear el archivo de configuración de Spring
+2.- Crear el web.xml y configurar la DispatcherServlet
+3.- Crear las páginas Web
+4.- Escribir los controladores
+5.- Escribir un validador
+6.- Aplicarlo
