@@ -82,3 +82,7 @@ hs_err_pid*
 /spring/dao/JPA/SpringJpaWeb/target/
 /spring/orm/JPA/EjemploJpa/target/
 /spring/orm/hibernate/Clases con Relaciones Birireccionales/ClasesConRelacionesBidireccionales0001/target/
+/ServLetuno/target/
+/servLetRedirect/target/
+/persistenciaServLet/target/
+/persistenciaTagLib/target/
